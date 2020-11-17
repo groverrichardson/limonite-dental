@@ -1,8 +1,15 @@
 import React from 'react';
-// import { Link } from 'react-dom';
+import { Button } from 'react-bootstrap';
 
 export default class EmergencyButton extends React.Component {
     render() {
-        return <button className="emergency-button">Emergency Contact</button>;
+        return (
+            <Button
+                className="emergency col-xs-12 col-lg-5 p-3 p-lg"
+                variant="danger"
+            >
+                Emergency Contact
+            </Button>
+        );
     }
 }

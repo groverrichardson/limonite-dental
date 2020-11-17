@@ -32,119 +32,71 @@ $white: #ffffff
     box-sizing: border-box
     font-family: 'Mulish', sans-serif
     color: $darkBlue
+
+.logo
+    color: $darkBlue !important
+    font-weight: 900
+    text-transform: uppercase
+    @media screen and (max-width: 515px)
+        display: none
+
+.mobile-logo
+    color: $darkBlue !important
+    font-weight: 900
+    text-transform: uppercase
+    @media screen and (min-width: 515px)
+        display: none
+
+.nav-link
+    text-transform: uppercase
+    color: $darkBlue !important
+    font-weight: 900
+
+h1
+    color: $darkBlue
+    font-weight: 700
+    letter-spacing: -2.5px
+    font-size: 3em
+    @media screen and (max-width: 835px)
+        font-size: 2.5em
     
-.main-menu
-    +flexColumn 
-    width: 100%
-    position: -webkit-sticky
-    position: sticky
-    top: 0
-    z-index: 2
-    background-color: white
-    box-shadow: 0px 0px 15px -15px black
-    
-.top-menu
-    margin: 15px 0px
-    padding-left: 10vw
-    padding-right: 10vw
+h3
+    font-size: 1em
+    font-weight: 900
 
-.top-menu, .bottom-menu
-    +flexRow
-    width: 100%
-    justify-content: space-between
-    z-index: 2
+.days, .times
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 12px
+    @media screen and (max-width: 835px)
+        display: none
 
-.bottom-menu
-    white-space: nowrap
-    padding: 15px 10vw 15px 10vw
-    justify-content: center
-
-.times
-    margin-left: 15px
-
-.monday-thursday, .friday
+.days
     font-weight: 700
 
-.date-container
-    margin: 0px 20px
-    +flexRow 
-
-.bottom-menu
+.sub-menu
     background-color: $yellow
-    max-height: 88px
 
-.office-hours
-    font-weight: 900
-    text-transform: uppercase
-
-h2
-    font-weight: 900
-    text-transform: uppercase
-
-.page-button
+.request
+    background-color: $darkBlue
     border: none
-    background-color: unset
+    padding: 10px
+    border-radius: unset
+    color: white 
     font-weight: 800
-    text-transform: uppercase
-    font-size: 1em
 
-.request-button, .emergency-button
-    +button
-
-.emergency-button
-    color: $darkBlue
-    background-color: $yellow
-
-.menu-copy
-    font-size: .925em
-
-.page-menu
-    +flexRow 
-    justify-content: space-between
-    width: 430px
-
-.hero-section
-    +flexRow  
-    padding: 50px 10vw
-    background-image: linear-gradient($lightBlue, $white)
-    justify-content: space-between
+.hero-section-container
+    background-image:  linear-gradient($lightBlue, $white)
 
 .hero-image
-    max-width: 40vw
-    border: solid white 15px
+    background-color: white
 
-.hero-header
-    font-weight: 700
-    font-size: 3em
-    max-width: 420px
-    letter-spacing: -2px
+.toggle
+    border: none
 
-.hero-copy
-    font-size: 1em
+.request-cta
+    @media screen and (max-width: 835px)
+        display: none
 
-.hero-copy-container
-    max-width: 470px
-
-.hero-button-container
-    +flexRow 
-    justify-content: space-between
-    max-width: 420px
-    margin-top: 50px
-
-.image-container
-    position: relative
-    z-index: 0
-
-.circle
-    position: absolute
-
-.teal-circle-hero
-    right: -118px
-    height: 15em
-    bottom: -181px
-
-.pink-circle-hero
-    left: -73px
-    height: 8em
-    top: -77px
-    z-index: -1
+.info-card-img, .top-section-image
+    max-width: 300px

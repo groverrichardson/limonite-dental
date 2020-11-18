@@ -5,7 +5,7 @@ export default class RequestButton extends React.Component {
     render() {
         return (
             <Button
-                className="request request-cta mr-md-5"
+                className={this.props.customClass}
                 variant="primary"
                 lg={{ order: 'first' }}
             >

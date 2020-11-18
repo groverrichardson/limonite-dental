@@ -35,7 +35,7 @@ export default class TopMenu extends React.Component {
                         </NavLink>
                     </Nav>
                 </NavbarCollapse>
-                <RequestButton />
+                <RequestButton customClass="request request-cta mr-md-5" />
             </Navbar>
         );
     }

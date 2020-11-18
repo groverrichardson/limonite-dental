@@ -19,25 +19,30 @@ export default class HomePage extends React.Component {
                 </Container>
                 <HeroSection />
                 <Section
-                    headerCopy="This is a test"
+                    headerCopy="Our Services"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="See all Services"
                     infoImageSource={sampleImg}
                     infoHeaderCopy="Ortho/Braces"
                     infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    customClass="mb-5"
                 />
-                <Row>
-                    <InfoCard
-                        infoImageSource={sampleImg}
-                        infoHeaderCopy="Aligners"
-                        infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    />
-                    <InfoCard
-                        infoImageSource={sampleImg}
-                        infoHeaderCopy="Aligners"
-                        infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    />
-                </Row>
+                <Container>
+                    <Row>
+                        <InfoCard
+                            infoImageSource={sampleImg}
+                            infoHeaderCopy="Aligners"
+                            infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                            customClass="mb-5"
+                        />
+                        <InfoCard
+                            infoImageSource={sampleImg}
+                            infoHeaderCopy="Aligners"
+                            infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                            customClass="mb-5"
+                        />
+                    </Row>
+                </Container>
                 <Section
                     headerCopy="This is a test"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."

@@ -4,12 +4,12 @@ import { Container, Row } from 'react-bootstrap';
 export default class SubMenu extends React.Component {
     render() {
         return (
-            <Container fluid className="sub-menu px-5">
-                <Row className="office-hours-container justify-content-start align-items-start py-2">
+            <Container fluid className="sub-menu px-5 py-auto">
+                <Row className="office-hours-container justify-content-start align-items-center py-2">
                     <Row className="col-sm-12 col-lg-2 justify-content-center align-items-center">
-                        <h3 className="office-hours m-0 text-uppercase">
+                        <p className="office-hours m-0 text-uppercase">
                             Office Hours
-                        </h3>
+                        </p>
                     </Row>
                     <Row className="col-sm-12 col-lg-3 justify-content-center">
                         <p className="days mr-3">Monday-Thursday</p>

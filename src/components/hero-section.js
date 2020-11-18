@@ -9,10 +9,10 @@ export default class HeroSection extends React.Component {
         return (
             <Container
                 fluid
-                className="hero-section-container p-2 py-md-2 px-md-5"
+                className="hero-section-container p-2 py-5 py-md-2 px-3 px-sm-5"
             >
                 <Row className="justify-content-center align-items-center p-3">
-                    <div className="col-md-6 hero-typography py-5 mx-sm-5 mx-md-0">
+                    <div className="col-md-6 hero-typography py-2 py-md-5 mx-sm-5 mx-md-0">
                         <h1 className="hero-header">
                             Your Best Smile <br className="d-none d-md-block" />{' '}
                             Is One Visit Away
@@ -24,7 +24,7 @@ export default class HeroSection extends React.Component {
                         </p>
                         <Container>
                             <Row>
-                                <RequestButton />
+                                <RequestButton customClass="col-xs-12 col-lg-5 p-lg mb-2 mb-lg-0 mr-lg-2 request request-hero" />
                                 <EmergencyButton />
                             </Row>
                         </Container>
@@ -32,7 +32,7 @@ export default class HeroSection extends React.Component {
                     <img
                         src={heroImg}
                         alt="Smiling Faces"
-                        className="hero-image col-md-6 p-3"
+                        className="hero-image col-md-6 p-3 mt-5 mt-0"
                     />
                 </Row>
             </Container>

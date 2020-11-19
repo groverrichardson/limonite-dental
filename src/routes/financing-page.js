@@ -15,25 +15,29 @@ export default class FinancingPage extends React.Component {
                 <TopMenu />
                 <SubMenu />
                 <TopSection
-                    header="Financing"
+                    headerCopy="Financing"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    image={sampleImg}
+                    infoImageSource={sampleImg}
+                    customClass="px-5"
                 />
-                <Row>
+                <Row className="p-5">
                     <InfoCard
                         infoImageSource={sampleImg}
                         infoHeaderCopy="Wells Fargo"
                         infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        customClass="py-5"
                     />
                     <InfoCard
                         infoImageSource={sampleImg}
                         infoHeaderCopy="Wells Fargo"
                         infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        customClass="py-5"
                     />
                     <InfoCard
                         infoImageSource={sampleImg}
                         infoHeaderCopy="Wells Fargo"
                         infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        customClass="py-5"
                     />
                 </Row>
                 <ContactSection />

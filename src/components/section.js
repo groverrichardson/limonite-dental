@@ -6,15 +6,16 @@ export default class Section extends React.Component {
     render() {
         return (
             <Container
+                fluid
                 className={'section-spacer' + ' ' + this.props.customClass}
             >
-                <Row>
-                    <div className="section-typography col-md-6 my-5 my-md-auto">
+                <Row className="justify-content-between align-items-center">
+                    <div className="section-typography col-md-6 pr-md-5 my-5 my-md-auto">
                         <h1 className="section-header">
                             {this.props.headerCopy}
                         </h1>
                         <p className="bodyCopy py-3">{this.props.bodyCopy}</p>
-                        <Button className="btn service-section-button col-xs-12 col-lg-5 p-lg">
+                        <Button className="btn service-section-button col-xs-12 col-lg p-lg">
                             {this.props.buttonCopy}
                         </Button>
                     </div>

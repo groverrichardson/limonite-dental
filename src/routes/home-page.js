@@ -8,6 +8,9 @@ import Section from '../components/section';
 import SubMenu from '../components/sub-menu';
 import TopMenu from '../components/top-menu';
 import sampleImg from '../assets/patient-smiling.jpeg';
+import smilingBraces from '../assets/smiling-braces/smiling-braces.png';
+import aligners from '../assets/aligners/aligners.png';
+import crowns from '../assets/crowns/crowns.png';
 
 export default class HomePage extends React.Component {
     render() {
@@ -22,24 +25,24 @@ export default class HomePage extends React.Component {
                     headerCopy="Our Services"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="See all Services"
-                    infoImageSource={sampleImg}
-                    infoHeaderCopy="Ortho/Braces"
+                    infoImageSource={smilingBraces}
+                    infoHeaderCopy="Ortho / Braces"
                     infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    customClass="mb-5"
+                    customClass="mb-5 px-5"
                 />
-                <Container>
+                <Container fluid>
                     <Row>
                         <InfoCard
-                            infoImageSource={sampleImg}
+                            infoImageSource={aligners}
                             infoHeaderCopy="Aligners"
                             infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            customClass="mb-5"
+                            customClass="mb-5 px-5"
                         />
                         <InfoCard
-                            infoImageSource={sampleImg}
-                            infoHeaderCopy="Aligners"
+                            infoImageSource={crowns}
+                            infoHeaderCopy="Crowns"
                             infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            customClass="mb-5"
+                            customClass="mb-5 px-5"
                         />
                     </Row>
                 </Container>
@@ -50,6 +53,7 @@ export default class HomePage extends React.Component {
                     infoImageSource={sampleImg}
                     infoHeaderCopy="Ortho/Braces"
                     infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    customClass="mb-5 px-5"
                 />
                 <Section
                     headerCopy="This is a test"
@@ -58,6 +62,7 @@ export default class HomePage extends React.Component {
                     infoImageSource={sampleImg}
                     infoHeaderCopy="Ortho/Braces"
                     infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    customClass="mb-5 px-5"
                 />
                 <Section
                     headerCopy="This is a test"
@@ -66,6 +71,7 @@ export default class HomePage extends React.Component {
                     infoImageSource={sampleImg}
                     infoHeaderCopy="Ortho/Braces"
                     infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    customClass="mb-5 px-5 last-section"
                 />
                 <ContactSection />
                 <Footer />{' '}

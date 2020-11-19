@@ -25,6 +25,12 @@ $white: #ffffff
     font-family: 'Mulish', sans-serif
     color: $darkBlue
 
+#root
+    overflow-x: hidden
+
+.hide
+    display: none
+
 .logo
     color: $darkBlue !important
     font-weight: 900
@@ -69,7 +75,7 @@ h3
 .sub-menu
     background-color: $yellow
 
-.request, .service-section-button
+.request, .service-section-button, .profile-button
     background-color: $darkBlue
     border: none
     border-radius: unset
@@ -78,7 +84,7 @@ h3
     padding-top: 15px
     padding-bottom: 15px
     
-.emergency
+.emergency, .contact-submit
     background-color: $yellow
     border: none
     padding: 10px
@@ -88,11 +94,6 @@ h3
     padding-top: 15px
     padding-bottom: 15px
 
-.request-hero, .emergency
-    @media screen and (min-width: 1023px) and (max-width: 1279px)
-        padding-top: 5px
-        padding-bottom: 5px
-   
 
 .hero-section-container
     background-image:  linear-gradient($lightBlue, $white)
@@ -107,15 +108,34 @@ h3
     @media screen and (max-width: 835px)
         display: none
 
-.info-card-img
+.request
+    @media screen and (min-width: 1023px)
+        max-width: 217.938px
+
+.info-card-img, .top-section-image
     background-color: $white
     border: solid grey 1px
     width: 100%
 
+.info-card-img
+    max-height: 200px
+    object-fit: cover
+
 .section-spacer
     @media screen and (min-width: 768px)
-        margin-bottom: 100px
-        margin-top: 100px
+        margin-bottom: 150px
+        margin-top: 150px
+
+.extra-spacer
+    @media screen and (min-width: 768px)
+        margin-bottom: 250px
+        margin-top: 250px
+
+.last-section
+    @media screen and (min-width: 768px)
+        margin-bottom: 250px
+        margin-top: 250px
+        padding-bottom: 100px
 
 .office-hours
     font-weight: 900
@@ -126,3 +146,57 @@ h3
 
 .contact-header, .contact-typography, .contact-copy
     color: $white
+
+.form-label
+    display: none
+
+.contact-form
+    background-color: $lightBlue
+
+.footer-header
+    text-transform: uppercase
+    color: #6F6F6F
+    font-weight: 900
+    font-size: 1em
+
+.footer-typography
+    color: #6F6F6F
+    font-size: 1em
+
+.footer
+    background-color: #F7F7F7
+
+.hero-image-container
+    position: relative
+
+.hero-pink, .hero-teal, .hero-yellow
+    position: absolute
+
+.hero-teal
+    max-width: 20vw
+    bottom: -25px
+    right: 5px
+    z-index: 1
+    @media screen and (min-width: 767px)
+        bottom: -110px
+        right: -50px
+    @media screen and (min-width: 1023px)
+        bottom: -150px
+        right: -75px
+
+.hero-yellow
+    z-index: 1
+    max-width: 10vw
+    bottom: -5px
+    left: 100px
+    @media screen and (min-width: 767px)
+        bottom: -30px
+        max-width: 7vw
+    @media screen and (min-width: 1023px)
+        left: 150px
+
+.hero-pink
+    z-index: 0
+    max-width: 30vw
+    left: -40px
+    top: -50px

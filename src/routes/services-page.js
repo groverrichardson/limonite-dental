@@ -14,63 +14,73 @@ export default class ServicesPage extends React.Component {
                 <TopMenu />
                 <SubMenu />
                 <TopSection
-                    header="Services"
+                    headerCopy="Services"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    image={sampleImg}
+                    infoImageSource={sampleImg}
+                    customClass="px-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5"
                 />
                 <Section
                     headerCopy="Wisdom Teeth/Surgery"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
+                    customClass="extra-spacer px-5 mb-5 last-section"
                 />
                 <ContactSection />
                 <Footer />

@@ -3,13 +3,16 @@ import { Container, Row } from 'react-bootstrap';
 import EmergencyButton from './emergency-button';
 import RequestButton from './request-button';
 import heroImg from '../assets/hero-image/hero-image.png';
+import pinkCircle from '../assets/pink-circle.svg';
+import tealCircle from '../assets/teal-circle.svg';
+import yellowCircle from '../assets/yellow-circle.svg';
 
 export default class HeroSection extends React.Component {
     render() {
         return (
             <Container
                 fluid
-                className="hero-section-container p-2 py-5 py-md-2 px-3 px-sm-5"
+                className="hero-section-container p-2 py-3 py-md-2 px-3 px-sm-5"
             >
                 <Row className="justify-content-center align-items-center p-3">
                     <div className="col-md-6 hero-typography py-2 py-md-5 mx-sm-5 mx-md-0">
@@ -24,16 +27,33 @@ export default class HeroSection extends React.Component {
                         </p>
                         <Container>
                             <Row>
-                                <RequestButton customClass="col-xs-12 col-lg-5 p-lg mb-2 mb-lg-0 mr-lg-2 request request-hero" />
+                                <RequestButton customClass="col-xs-12 col-lg p-lg mb-2 mb-lg-0 mr-lg-2 request request-hero" />
                                 <EmergencyButton />
                             </Row>
                         </Container>
                     </div>
-                    <img
-                        src={heroImg}
-                        alt="Smiling Faces"
-                        className="hero-image col-md-6 p-3 mt-5 mt-0"
-                    />
+                    <div className="hero-image-container col-md-6 mt-5 mt-0">
+                        <img
+                            src={pinkCircle}
+                            alt="decorative circle"
+                            className="pink hero-pink"
+                        />
+                        <img
+                            src={tealCircle}
+                            alt="decorative circle"
+                            className="teal hero-teal"
+                        />
+                        <img
+                            src={yellowCircle}
+                            alt="decorative circle"
+                            className="yellow hero-yellow"
+                        />
+                        <img
+                            src={heroImg}
+                            alt="Smiling Faces"
+                            className="hero-image col p-3"
+                        />
+                    </div>
                 </Row>
             </Container>
         );

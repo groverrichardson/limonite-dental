@@ -7,7 +7,7 @@ import RequestButton from './request-button';
 export default class TopMenu extends React.Component {
     render() {
         return (
-            <Navbar className="py-3" expand="lg">
+            <Navbar className="py-2" expand="lg">
                 <NavbarBrand className="logo ml-md-5">
                     Limonite Dental
                 </NavbarBrand>

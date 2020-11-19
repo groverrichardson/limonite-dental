@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import InfoCard from './info-card';
 
-export default class Section extends React.Component {
+export default class ReverseSection extends React.Component {
     render() {
         return (
             <Container
@@ -10,7 +10,7 @@ export default class Section extends React.Component {
                 className={'section-spacer' + ' ' + this.props.customClass}
             >
                 <Row className="justify-content-around align-items-center">
-                    <div className="section-typography col-md-6 col-lg-4 pr-md-5 pr-lg my-md-5 mb-5 my-md-auto order-last order-md-first">
+                    <div className="section-typography col-md-6 col-lg-4 pr-md-5 my-md-5 mb-5 my-md-auto">
                         <h1 className="section-header">
                             {this.props.headerCopy}
                         </h1>

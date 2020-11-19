@@ -118,7 +118,7 @@ h3
     width: 100%
 
 .info-card-img
-    max-height: 200px
+    max-height: 250px
     object-fit: cover
 
 .section-spacer
@@ -166,10 +166,10 @@ h3
 .footer
     background-color: #F7F7F7
 
-.hero-image-container
+.hero-image-container, .service-section-container, .info-img-container
     position: relative
 
-.hero-pink, .hero-teal, .hero-yellow
+.hero-pink, .hero-teal, .hero-yellow, .service-sec-circle-purple, .service-sec-circle-yellow, .service-sec-circle-coral
     position: absolute
 
 .hero-teal
@@ -200,3 +200,43 @@ h3
     max-width: 30vw
     left: -40px
     top: -50px
+
+.service-sec-circle-purple
+    max-width: 10vw
+    z-index: 1
+    bottom: 325px
+    @media screen and (min-width: 767px)
+        left: 350px
+        max-width: 5vw
+    @media screen and (min-width: 833px)
+        left: 375px
+    @media screen and (min-width: 1279px)
+        left: 550px
+        max-width: 3vw
+
+.service-sec-circle-coral
+    z-index: 0
+    max-width: 30vw
+    bottom: 175px
+    right: 50px
+    @media screen and (min-width: 374px)
+        bottom: 150px
+    @media screen and (min-width: 833px)
+        bottom: 125px
+    @media screen and (min-width: 1279px)
+        bottom: 90px
+        right: 150px
+
+.service-sec-circle-yellow
+    z-index: 0
+    max-width: 50vw
+    top: -50px
+    right: 0px
+    @media screen and (min-width: 767px)
+        right: 375px
+    @media screen and (min-width: 833px)
+        right: 415px
+    @media screen and (min-width: 1023px)
+        right: 500px
+    @media screen and (min-width: 1279px)
+        right: 625px

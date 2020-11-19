@@ -11,6 +11,12 @@ import sampleImg from '../assets/patient-smiling.jpeg';
 import smilingBraces from '../assets/smiling-braces/smiling-braces.png';
 import aligners from '../assets/aligners/aligners.png';
 import crowns from '../assets/crowns/crowns.png';
+import doctors from '../assets/doctors/doctors.png';
+import ReverseSection from '../components/reverse-section';
+import receptionist from '../assets/receptionist/receptionist.png';
+import purpleCircle from '../assets/purple-circle.svg';
+import coralCircle from '../assets/coral-circle.svg';
+import yellowCircle from '../assets/yellow-circle.svg';
 
 export default class HomePage extends React.Component {
     render() {
@@ -21,17 +27,34 @@ export default class HomePage extends React.Component {
                     <SubMenu />
                 </Container>
                 <HeroSection />
-                <Section
-                    headerCopy="Our Services"
-                    bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="See all Services"
-                    infoImageSource={smilingBraces}
-                    infoHeaderCopy="Ortho / Braces"
-                    infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    customClass="mb-5 px-5"
-                />
+                <div className="service-section-container">
+                    <img
+                        src={purpleCircle}
+                        alt=""
+                        className="service-sec-circle-purple purple"
+                    />
+                    <img
+                        src={coralCircle}
+                        alt=""
+                        className="service-sec-circle-coral coral"
+                    />
+                    <ReverseSection
+                        headerCopy="Our Services"
+                        bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        buttonCopy="See all Services"
+                        infoImageSource={smilingBraces}
+                        infoHeaderCopy="Ortho / Braces"
+                        infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        customClass="mb-5 px-5 pt-5"
+                    />
+                </div>
                 <Container fluid>
-                    <Row>
+                    <Row className="info-img-container">
+                        <img
+                            src={yellowCircle}
+                            alt=""
+                            className="service-sec-circle-yellow yellow"
+                        />
                         <InfoCard
                             infoImageSource={aligners}
                             infoHeaderCopy="Aligners"
@@ -42,36 +65,30 @@ export default class HomePage extends React.Component {
                             infoImageSource={crowns}
                             infoHeaderCopy="Crowns"
                             infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            customClass="mb-5 px-5"
+                            customClass="mb-5 px-5 pb-5"
                         />
                     </Row>
                 </Container>
                 <Section
-                    headerCopy="This is a test"
+                    headerCopy="Our Team"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="See all Services"
-                    infoImageSource={sampleImg}
-                    infoHeaderCopy="Ortho/Braces"
-                    infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    buttonCopy="Meet the Team"
+                    infoImageSource={doctors}
                     customClass="mb-5 px-5"
                 />
                 <Section
-                    headerCopy="This is a test"
+                    headerCopy="What to Expect"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="See all Services"
+                    buttonCopy="Request an Appointment"
                     infoImageSource={sampleImg}
-                    infoHeaderCopy="Ortho/Braces"
-                    infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                     customClass="mb-5 px-5"
                 />
                 <Section
-                    headerCopy="This is a test"
+                    headerCopy="Financing"
                     bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="See all Services"
-                    infoImageSource={sampleImg}
-                    infoHeaderCopy="Ortho/Braces"
-                    infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    customClass="mb-5 px-5 last-section"
+                    buttonCopy="Learn More About Financing"
+                    infoImageSource={receptionist}
+                    customClass="mb-5 px-5 pb-5"
                 />
                 <ContactSection />
                 <Footer />{' '}

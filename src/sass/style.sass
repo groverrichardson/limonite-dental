@@ -26,6 +26,9 @@ $white: #ffffff
     color: $darkBlue
 
 #root
+    max-width: 1530px
+
+.scroller
     overflow-x: hidden
 
 .hide
@@ -169,7 +172,7 @@ h3
 .hero-image-container, .service-section-container, .info-img-container
     position: relative
 
-.hero-pink, .hero-teal, .hero-yellow, .service-sec-circle-purple, .service-sec-circle-yellow, .service-sec-circle-coral
+.hero-pink, .hero-teal, .hero-yellow, .service-sec-circle-purple, .service-sec-circle-yellow, .service-sec-circle-coral, .aligner-sec-circle-teal
     position: absolute
 
 .hero-teal
@@ -221,11 +224,13 @@ h3
     right: 50px
     @media screen and (min-width: 374px)
         bottom: 150px
+    @media screen and (min-width: 767px)
+        bottom: -300px
     @media screen and (min-width: 833px)
-        bottom: 125px
-    @media screen and (min-width: 1279px)
-        bottom: 90px
-        right: 150px
+        bottom: -325px
+    @media screen and (min-width: 1023px)
+        bottom: -330px
+        right: 100px
 
 .service-sec-circle-yellow
     z-index: 0
@@ -240,3 +245,17 @@ h3
         right: 500px
     @media screen and (min-width: 1279px)
         right: 625px
+
+.aligner-sec-circle-teal
+    z-index: -1
+    max-width: 20vw
+    bottom: 500px
+    left: 25px
+    @media screen and (min-width: 410px)
+        bottom: 525px
+    @media screen and (min-width: 767px)
+        max-width: 10vw
+        bottom: 90px
+    @media screen and (min-width: 1023px)
+        max-width: 5vw
+        bottom: 100px

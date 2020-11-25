@@ -17,6 +17,7 @@ import receptionist from '../assets/receptionist/receptionist.png';
 import purpleCircle from '../assets/purple-circle.svg';
 import coralCircle from '../assets/coral-circle.svg';
 import yellowCircle from '../assets/yellow-circle.svg';
+import tealCircle from '../assets/teal-circle.svg';
 
 export default class HomePage extends React.Component {
     render() {
@@ -26,72 +27,124 @@ export default class HomePage extends React.Component {
                     <TopMenu />
                     <SubMenu />
                 </Container>
-                <HeroSection />
-                <div className="service-section-container">
+                <Container fluid className="scroller m-0 p-0">
+                    <HeroSection />
+                    <div className="service-section-container">
+                        <img
+                            src={purpleCircle}
+                            alt=""
+                            className="service-sec-circle-purple purple"
+                        />
+                        <img
+                            src={coralCircle}
+                            alt=""
+                            className="service-sec-circle-coral coral"
+                        />
+                        <ReverseSection
+                            headerCopy="Our Services"
+                            bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                            buttonCopy="See all Services"
+                            infoImageSource={smilingBraces}
+                            infoHeaderCopy="Ortho / Braces"
+                            infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                            customClass="mb-5 px-5 pt-5"
+                        />
+                    </div>
+                    <Container fluid>
+                        <Row className="info-img-container">
+                            <img
+                                src={yellowCircle}
+                                alt=""
+                                className="service-sec-circle-yellow yellow"
+                            />
+                            <InfoCard
+                                infoImageSource={aligners}
+                                infoHeaderCopy="Aligners"
+                                infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                                customClass="mb-5 px-5"
+                            />
+                            <img
+                                src={tealCircle}
+                                alt=""
+                                className="teal aligner-sec-circle-teal"
+                            />
+                            <InfoCard
+                                infoImageSource={crowns}
+                                infoHeaderCopy="Crowns"
+                                infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                                customClass="mb-5 px-5 pb-5"
+                            />
+                        </Row>
+                    </Container>
+                    <img
+                        src={yellowCircle}
+                        alt=""
+                        className="our-team-circle-yellow yellow"
+                    />
                     <img
                         src={purpleCircle}
                         alt=""
-                        className="service-sec-circle-purple purple"
+                        className="our-team-circle-purple purple"
                     />
                     <img
                         src={coralCircle}
                         alt=""
-                        className="service-sec-circle-coral coral"
+                        className="our-team-circle-coral coral"
                     />
-                    <ReverseSection
-                        headerCopy="Our Services"
+                    <img
+                        src={purpleCircle}
+                        alt=""
+                        className="our-team-circle-purple-sm purple"
+                    />
+                    <Section
+                        headerCopy="Our Team"
                         bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                        buttonCopy="See all Services"
-                        infoImageSource={smilingBraces}
-                        infoHeaderCopy="Ortho / Braces"
-                        infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                        customClass="mb-5 px-5 pt-5"
+                        buttonCopy="Meet the Team"
+                        infoImageSource={doctors}
+                        customClass="mb-5 px-5"
                     />
-                </div>
-                <Container fluid>
-                    <Row className="info-img-container">
-                        <img
-                            src={yellowCircle}
-                            alt=""
-                            className="service-sec-circle-yellow yellow"
-                        />
-                        <InfoCard
-                            infoImageSource={aligners}
-                            infoHeaderCopy="Aligners"
-                            infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            customClass="mb-5 px-5"
-                        />
-                        <InfoCard
-                            infoImageSource={crowns}
-                            infoHeaderCopy="Crowns"
-                            infoCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            customClass="mb-5 px-5 pb-5"
-                        />
-                    </Row>
+                    <img
+                        src={yellowCircle}
+                        alt=""
+                        className="expect-circle-yellow yellow"
+                    />
+                    <img
+                        src={tealCircle}
+                        alt=""
+                        className="expect-circle-teal te"
+                    />
+                    <img
+                        src={tealCircle}
+                        alt=""
+                        className="expect-circle-teal-sm teal"
+                    />
+                    <Section
+                        headerCopy="What to Expect"
+                        bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        buttonCopy="Request an Appointment"
+                        infoImageSource={sampleImg}
+                        customClass="mb-5 px-5"
+                    />
+                    <Section
+                        headerCopy="Financing"
+                        bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                        buttonCopy="Learn More About Financing"
+                        infoImageSource={receptionist}
+                        customClass="mb-5 px-5 pb-5"
+                    />
+                    <img
+                        src={purpleCircle}
+                        alt=""
+                        className="financing-circle-purple purple"
+                    />
+                    <img
+                        src={coralCircle}
+                        alt=""
+                        className="financing-circle-coral coral"
+                    />
+                    <ContactSection />
+                    <Footer />{' '}
                 </Container>
-                <Section
-                    headerCopy="Our Team"
-                    bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="Meet the Team"
-                    infoImageSource={doctors}
-                    customClass="mb-5 px-5"
-                />
-                <Section
-                    headerCopy="What to Expect"
-                    bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="Request an Appointment"
-                    infoImageSource={sampleImg}
-                    customClass="mb-5 px-5"
-                />
-                <Section
-                    headerCopy="Financing"
-                    bodyCopy="Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                    buttonCopy="Learn More About Financing"
-                    infoImageSource={receptionist}
-                    customClass="mb-5 px-5 pb-5"
-                />
-                <ContactSection />
-                <Footer />{' '}
             </>
         );
     }

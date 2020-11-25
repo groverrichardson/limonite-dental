@@ -7,7 +7,11 @@ export default class Section extends React.Component {
         return (
             <Container
                 fluid
-                className={'section-spacer' + ' ' + this.props.customClass}
+                className={
+                    'section-spacer section extra-spacer' +
+                    ' ' +
+                    this.props.customClass
+                }
             >
                 <Row className="justify-content-around align-items-center">
                     <div className="section-typography col-md-6 col-lg-4 pr-md-5 pr-lg my-md-5 mb-5 my-md-auto order-last order-md-first">

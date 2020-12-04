@@ -13,7 +13,7 @@ export default class Section extends React.Component {
                     this.props.customClass
                 }
             >
-                <Row className="justify-content-around align-items-center">
+                <Row className="justify-content-around align-items-center section">
                     <div className="section-typography col-md-6 col-lg-4 pr-md-5 pr-lg my-md-5 mb-5 my-md-auto order-last order-md-first">
                         <h1 className="section-header">
                             {this.props.headerCopy}

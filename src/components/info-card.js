@@ -2,10 +2,11 @@ import React from 'react';
 
 export default class InfoCard extends React.Component {
     render() {
-        console.log(this.props.infoHeaderCopy);
         return (
             <div
-                className={'info-card col-md-6' + ' ' + this.props.customClass}
+                className={
+                    'info-card col-md-6 col-xl-4' + ' ' + this.props.customClass
+                }
             >
                 <img
                     src={this.props.infoImageSource}

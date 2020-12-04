@@ -12,10 +12,10 @@ export default class HeroSection extends React.Component {
         return (
             <Container
                 fluid
-                className="hero-section-container p-2 py-3 py-md-2 px-3 px-sm-5"
+                className="hero-section-container p-2 py-3 py-md-2 px-3 px-sm-5 justify-content-center"
             >
-                <Row className="justify-content-center align-items-center p-3">
-                    <div className="col-md-6 hero-typography py-2 py-md-5 mx-sm-5 mx-md-0">
+                <Row className="justify-content-around align-items-center p-3 hero-row-container m-auto">
+                    <div className="col-md-6 hero-typography py-2 py-md-5">
                         <h1 className="hero-header">
                             Your Best Smile <br className="d-none d-md-block" />{' '}
                             Is One Visit Away

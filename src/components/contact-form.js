@@ -11,7 +11,7 @@ import {
 export default class ContactForm extends React.Component {
     render() {
         return (
-            <Form className="col-12 col-md-6 justify-content-center align-items-center p-3 contact-form">
+            <Form className="col-12 col-md-6 justify-content-center align-items-center p-3 contact-form col-xl-4">
                 <FormGroup>
                     <FormLabel className="form-label">First Name</FormLabel>
                     <FormControl

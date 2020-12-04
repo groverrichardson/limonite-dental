@@ -18,13 +18,19 @@ $white: #ffffff
     flex-wrap: wrap
     justify-content: center
     align-items: center
-
+ 
 *
     margin: unset
     box-sizing: border-box
     font-family: 'Mulish', sans-serif
     color: $darkBlue
 
+body
+    font-size: 16px
+    @media screen and (min-width: 1920px)
+        font-size: 20px
+    @media screen and (min-width: 1680px)
+        font-size: 21px
 .scroller
     overflow-x: hidden
 
@@ -49,6 +55,9 @@ $white: #ffffff
     text-transform: uppercase
     color: $darkBlue !important
     font-weight: 900
+    @media screen and (max-width: 768px)
+        font-size: 12px
+        font-weight: 700
 
 h1
     color: $darkBlue
@@ -65,7 +74,7 @@ h3
 .days, .times
     margin-top: 0
     margin-bottom: 0
-    font-size: 12px
+    font-size: .75em
     @media screen and (max-width: 835px)
         display: none
 
@@ -122,13 +131,14 @@ h3
     object-fit: cover
 
 .section-spacer
-    @media screen and (min-width: 768px)
-        margin-bottom: 150px
-        margin-top: 150px
+    @media screen and (min-width: 1680px)
+        margin-top: 50px
 
 .extra-spacer
     @media screen and (min-width: 768px)
         margin-bottom: 250px
+        margin-top: 200px
+    @media screen and (min-width: 1680px)
         margin-top: 250px
 
 .last-section
@@ -183,6 +193,14 @@ h3
     @media screen and (min-width: 1023px)
         bottom: -150px
         right: -75px
+    @media screen and (min-width: 1439px)
+        max-width: 15vw
+    @media screen and (min-width: 1920px)
+        bottom: -40%
+        right: -20%
+    @media screen and (min-width: 2560px)
+        bottom: -50%
+        right: -30%
 
 .hero-yellow
     z-index: 1
@@ -212,7 +230,9 @@ h3
         left: 375px
     @media screen and (min-width: 1279px)
         left: 550px
-        max-width: 3vw
+    @media screen and (min-width: 1920px)
+        bottom: 75%
+        max-width: 2vw
 
 .service-sec-circle-coral
     z-index: 0
@@ -256,3 +276,104 @@ h3
     @media screen and (min-width: 1023px)
         max-width: 5vw
         bottom: 100px
+
+.our-team-section
+    position: relative
+
+.our-team-circle-purple-sm
+    z-index: 1
+    position: absolute
+    max-width: 10vw
+    bottom: 0%
+    right: 25%
+    @media screen and (min-width: 374px)
+        bottom: -2%
+    @media screen and (min-width: 767px)
+        max-width: 5vw
+        right: 40%
+        bottom: -5%
+
+.our-team-circle-coral
+    z-index: -1
+    position: absolute
+    max-width: 30vw
+    bottom: -12%
+    right: 35%
+    @media screen and (min-width: 374px)
+        bottom: -10%
+    @media screen and (min-width: 767px)
+        max-width: 15vw
+        bottom: -15%
+        right: unset
+        left: 40%
+
+.our-team-circle-purple
+    z-index: -1
+    position: absolute
+    max-width: 30vw
+    top: -23%
+    right: 20%
+    @media screen and (min-width: 768px)
+        top: -125%
+        right: 25%
+
+.our-team-circle-yellow
+    z-index: -1
+    position: absolute
+    max-width: 40vw
+    top: -20%
+    left: 10%
+
+.hero-typography
+    max-width: 500px
+
+.office-hours-container
+    max-width: 2000px
+
+.expect-circle-yellow, .expect-circle-teal, .expect-circle-teal-sm
+    position: absolute
+
+.expect-circle-teal, .expect-circle-yellow
+    display: none
+
+.expect-circle-teal-sm
+    max-width: 60vw
+    bottom: 0%
+    right: 0%
+
+.expect-section-container
+    position: relative
+
+.financing-circle-purple, .financing-circle-coral
+    position: absolute
+
+.financing-circle-purple
+    z-index: -1
+    bottom: 0%
+    max-width: 20vw
+    left: 10%
+
+.financing-circle-coral
+    z-index: -1
+    bottom: 10%
+    max-width: 30vw
+    right: 0%
+
+.financing-section-container
+    position: relative
+
+.hero-row-container
+    max-width: 1280px
+
+.section
+    max-width: 1590px
+    @media screen and (min-width: 1920px)
+        margin-right: auto
+        margin-left: auto
+
+.our-services-container
+    max-width: 1500px
+    margin-right: auto
+    margin-left: auto
+    @media screen and (min-width: 768px)
+        margin-bottom: -150px

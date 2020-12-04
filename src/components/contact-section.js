@@ -6,8 +6,8 @@ export default class ContactSection extends React.Component {
     render() {
         return (
             <Container fluid className="mt-5 contact-section p-5">
-                <Row className="justify-content-center align-items-center">
-                    <div className="contact-typography col-md-6">
+                <Row className="justify-content-center align-items-center justify-content-xl-around">
+                    <div className="contact-typography col-md-6 col-xl-4">
                         <h2 className="contact-header">Contact Us</h2>
                         <p className="contact-copy mt-3 mb-5">
                             Donec id elit non mi porta gravida at eget metus.

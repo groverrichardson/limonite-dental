@@ -20,17 +20,17 @@ export default class TopMenu extends React.Component {
                     id="basic-navbar-nav"
                     className="justify-content-center"
                 >
-                    <Nav>
-                        <NavLink className="nav-link" href="#">
+                    <Nav className="align-items-md-center">
+                        <NavLink className="nav-link link-one" href="#">
                             Services
                         </NavLink>
-                        <NavLink className="nav-link" href="#">
+                        <NavLink className="nav-link link-two" href="#">
                             Team
                         </NavLink>
-                        <NavLink className="nav-link" href="#">
+                        <NavLink className="nav-link link-three" href="#">
                             Financing
                         </NavLink>
-                        <NavLink className="nav-link" href="#">
+                        <NavLink className="nav-link-four" href="#">
                             Blog
                         </NavLink>
                     </Nav>

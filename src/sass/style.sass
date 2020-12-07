@@ -120,6 +120,19 @@ h3
 .request
     @media screen and (min-width: 1023px)
         max-width: 217.938px
+    &:hover
+        background-color: $lightBlue
+        color: $darkBlue
+
+.service-section-button
+    &:hover
+        background-color: $lightBlue
+        color: $darkBlue
+
+.contact-submit
+    &:hover
+        background-color: $darkBlue
+        color: $white
 
 .info-card-img, .top-section-image
     background-color: $white
@@ -129,6 +142,9 @@ h3
 .info-card-img
     max-height: 250px
     object-fit: cover
+
+.info-card
+    z-index: 2
 
 .section-spacer
     @media screen and (min-width: 1680px)
@@ -195,6 +211,9 @@ h3
         right: -75px
     @media screen and (min-width: 1439px)
         max-width: 15vw
+    @media screen and (min-width: 1820px)
+        bottom: -40%
+        right: -20%
     @media screen and (min-width: 1920px)
         bottom: -40%
         right: -20%
@@ -262,6 +281,8 @@ h3
         right: 500px
     @media screen and (min-width: 1279px)
         right: 625px
+    @media screen and (min-width: 1920px)
+        top: -25%
 
 .aligner-sec-circle-teal
     z-index: -1
@@ -276,12 +297,14 @@ h3
     @media screen and (min-width: 1023px)
         max-width: 5vw
         bottom: 100px
+    @media screen and (min-width: 1920px)
+        left: 35%
 
 .our-team-section
     position: relative
 
 .our-team-circle-purple-sm
-    z-index: 1
+    z-index: 3
     position: absolute
     max-width: 10vw
     bottom: 0%
@@ -292,6 +315,8 @@ h3
         max-width: 5vw
         right: 40%
         bottom: -5%
+    @media screen and (min-width: 1680px)
+        right: 15%
 
 .our-team-circle-coral
     z-index: -1
@@ -306,6 +331,9 @@ h3
         bottom: -15%
         right: unset
         left: 40%
+    @media screen and (min-width: 1680)
+        left: 15%
+        top: 0%
 
 .our-team-circle-purple
     z-index: -1
@@ -316,6 +344,8 @@ h3
     @media screen and (min-width: 768px)
         top: -125%
         right: 25%
+    @media screen and (min-width: 1680px)
+        display: none
 
 .our-team-circle-yellow
     z-index: -1
@@ -323,6 +353,8 @@ h3
     max-width: 40vw
     top: -20%
     left: 10%
+    @media screen and (min-width: 1920px)
+        display: none
 
 .hero-typography
     max-width: 500px
@@ -340,6 +372,8 @@ h3
     max-width: 60vw
     bottom: 0%
     right: 0%
+    @media screen and (min-width: 1680px)
+        left: 30%
 
 .expect-section-container
     position: relative
@@ -358,6 +392,8 @@ h3
     bottom: 10%
     max-width: 30vw
     right: 0%
+    @media screen and (min-width: 1680px)
+        right: 15%
 
 .financing-section-container
     position: relative
@@ -377,3 +413,4 @@ h3
     margin-left: auto
     @media screen and (min-width: 768px)
         margin-bottom: -150px
+

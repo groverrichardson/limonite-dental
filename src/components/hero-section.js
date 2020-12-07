@@ -14,7 +14,7 @@ export default class HeroSection extends React.Component {
                 fluid
                 className="hero-section-container p-2 py-3 py-md-2 px-3 px-sm-5 justify-content-center"
             >
-                <Row className="justify-content-around align-items-center p-3 hero-row-container m-auto">
+                <Row className="justify-content-around align-items-center p-3 hero-row-container m-auto mt-xl-5">
                     <div className="col-md-6 hero-typography py-2 py-md-5">
                         <h1 className="hero-header">
                             Your Best Smile <br className="d-none d-md-block" />{' '}

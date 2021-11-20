@@ -1,11 +1,12 @@
 import React from 'react';
-import Test from './components/test';
+import Home from './components/home';
 import 'tailwindcss/tailwind.css';
+import Nav from './components/nav';
 
 function App() {
     return (
         <main className="App">
-            <Test />
+            <Home />
         </main>
     );
 }

@@ -1,11 +1,15 @@
 @mixin basic-boundaries 
     padding-left: 20%
     padding-right: 20%
-    
+
 *
     box-sizing: border-box
 
-Nav
+Nav, .hero
     @include basic-boundaries()
     
-        
+.hero
+    height: 600px
+
+h1 
+    font-size: 3em

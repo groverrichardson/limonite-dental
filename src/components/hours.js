@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hours() {
     return (
-        <div className="Hours flex flex-row justify-between items-center w-full">
+        <div className="Hours flex flex-row justify-between items-center w-full py-2">
             <div className="office-hours-header-container">Office Hours</div>
             <div className="monday-thursday-container flex flex-row justify-between items-center">
                 <p className="monday-thursday">Monday - Thursday</p>

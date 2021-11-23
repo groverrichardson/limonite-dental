@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './components/home';
 import 'tailwindcss/tailwind.css';
-import Nav from './components/nav';
+import './styles/tailwind.sass';
 
 function App() {
     return (
